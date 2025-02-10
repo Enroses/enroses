@@ -30,7 +30,7 @@
       margin-top: 20px;
     }
 
-    /* Modal styles */
+
     .modal {
       display: none;
       position: fixed;
@@ -64,7 +64,7 @@
       border: none;
     }
 
-    /* Snowflakes styles */
+
     .snowflake {
       position: absolute;
       top: -10px;
@@ -88,14 +88,14 @@
 </head>
 <body>
   <div id="container">
-    <img src="12.png" alt="Image 1" id="img1">
-    <img src="img.png" alt="Image 2" id="img2">
+    <img src="images/12.png" alt="Image 1" id="img1">
+    <img src="images/img.png" alt="Image 2" id="img2">
     <div class="text">
       Nigga Cant even spell "Holy" right then proceeds to call someone dumb 🔥
     </div>
   </div>
 
-  <!-- Modal for image display -->
+
   <div id="myModal" class="modal">
     <span class="close" id="closeBtn">&times;</span>
     <div class="modal-content">
@@ -104,29 +104,29 @@
   </div>
 
   <script>
-    // Function to display the image in modal
+
     function openModal(imageSrc) {
       document.getElementById("myModal").style.display = "block";
       document.getElementById("modalImg").src = imageSrc;
     }
 
-    // Close modal function
+
     function closeModal() {
       document.getElementById("myModal").style.display = "none";
     }
 
-    // Event listeners for images
+
     document.getElementById("img1").addEventListener("click", function() {
-      openModal("12.png");
+      openModal("images/12.png");
     });
     document.getElementById("img2").addEventListener("click", function() {
-      openModal("img.png");
+      openModal("images/img.png");
     });
 
-    // Close button
+
     document.getElementById("closeBtn").addEventListener("click", closeModal);
 
-    // Snowflake generator
+
     function createSnowflakes() {
       for (let i = 0; i < 100; i++) {
         let snowflake = document.createElement("div");
